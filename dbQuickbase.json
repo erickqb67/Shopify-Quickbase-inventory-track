@@ -1,0 +1,19 @@
+{
+  "env": {
+    "port": "8080",
+    "quickbaseUrl": "https://dmitryshats.quickbase.com/db/bqbk59eqm",
+    "quickbaseUrlTicket": "https://dmitryshats.quickbase.com/db/main",
+    "quickbaseUsername": "zhou.yang@anti-fragilityhealth.com",
+    "quickbasePassword": "Newlife5408",
+    "quickbaseAppToken": "cqxhus9dn3hg7fb6umnat9nqygv",
+    "realm": "dmitryshats"
+  },
+
+  "shopproduct": {},
+  "setting": {
+    "quickbase": {
+      "ticket": "9_bqc9t9w8e_b5cnjs_mtv6_a_-b_33zzs8czqq6fqc3mef9rba6p2r6c3mfpxu57hjmbdbw989xd266jvi_dgrakcu",
+      "expire": "2020-03-09T02:48:19.130Z"
+    }
+  }
+}
