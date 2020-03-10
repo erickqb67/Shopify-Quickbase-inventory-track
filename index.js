@@ -1,7 +1,7 @@
 require('isomorphic-fetch');
-const functions = require("firebase-functions")
 const next = require('next');
 const  dotenv = require('dotenv') ;
+dotenv.config()
 const Koa = require('koa');
 const { default: createShopifyAuth } = require('@shopify/koa-shopify-auth');
 const { verifyRequest } = require('@shopify/koa-shopify-auth');
@@ -11,7 +11,7 @@ const { ApiVersion } = require('@shopify/koa-shopify-graphql-proxy');
 const Router = require('koa-router');
 const { receiveWebhook, registerWebhook } = require('@shopify/koa-shopify-webhooks');
 const { orderPaidControl } = require('./service/orderPaid.control')
-const port = parseInt(process.env.PORT, 10) || 3000;
+const port = process.env.PORT || 3000;
 var dev = process.env.NODE_ENV !== 'production'
 var app = next({
   dev
@@ -20,7 +20,7 @@ const handle = app.getRequestHandler();
 const {
   SHOPIFY_API_SECRET_KEY,
   SHOPIFY_API_KEY,
-  HOST,
+  HOST
 } = process.env
 
  app.prepare().then(() => {
